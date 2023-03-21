@@ -175,3 +175,12 @@ const _ = require('lodash');
 // // The `_.property` iteratee shorthand.
 // _.findIndex(users, 'active');
 //   // => 2
+
+// _.cloneDeep(value)
+var objects = [{ 'a': 1 }, { 'b': 2 }];
+
+var deep = _.cloneDeep(objects);
+console.log(deep) // reference to other memory
+console.log(objects) // reference to other memory
+console.log(deep[0] === objects[0]);
+// => false
