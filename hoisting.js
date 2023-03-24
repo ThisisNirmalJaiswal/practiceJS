@@ -1,8 +1,8 @@
-'use strict'
+// 'use strict'
 
 x=3
 console.log(x); // 3
-var x;
+// var x;
 
 func() // Hello world
 function func(){
